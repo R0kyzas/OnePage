@@ -1,10 +1,11 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+a {
+  text-decoration: none!important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +36,137 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+header {
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6f2fb;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo a{
+  font-size: 28px;
+  color: #16507b;
+  text-decoration: none;
+}
+
+.navbar-nav a{
+  padding: 10px 0 10px 30px!important;
+  font-size: 16px!important;
+  color:#16507b;
+  white-space: nowrap;
+}
+
+.navbar-nav a:hover {
+  color: #2487ce;
+}
+
+.nav-item>.active {
+  color: #2487ce!important;
+}
+
+.nav-button {
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('./images/hero-bg.jpg') top center;
+  background-size: cover;
+}
+
+.hero::before {
+  content: '';
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.hero-content {
+  padding-top: 80px;
+  position: relative;
+}
+
+.hero-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  color: #124265;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-content h2 {
+  color: #5e5e5e;
+  margin: 10px 0 0 0;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero-button {
+  padding: 14px 50px;
+  border-radius: 5px;
+  margin-top: 30px;
+  display: inline-block;
+  color: white;
+  background: #2487ce;
+  border: none;
+}
+
+.hero-button a {
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.service-boxes {
+  margin-top: 100px!important;
+}
+
+.service-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 29px 0 rgb(18 66 101 / 8%);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  font-size: 36px;
+  line-height: 1;
+  color: #2487ce;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.title a {
+  color: #124265;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  color: #444444!important;
 }
